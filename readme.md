@@ -2,7 +2,7 @@
 
 > **Enterprise-grade invoice automation that processes invoices in 30 seconds instead of 5-10 minutes**
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-success?style=for-the-badge)](https://your-demo-url.com)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-success?style=for-the-badge)](https://receipt-processor-beta.vercel.app/)
 [![Contact Me](https://img.shields.io/badge/Hire-Me-blue?style=for-the-badge)](mailto:beingvikasbhadu@gmail.com)
 [![Portfolio](https://img.shields.io/badge/My-Portfolio-orange?style=for-the-badge)](https://your-portfolio.com)
 
