@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Invoice Processor</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Smart Invoice Processor</title>
+        <!-- Favicon -->
+        <!-- Favicon - Emoji version -->
+        <link rel="icon"
+            href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E📄%3C/text%3E%3C/svg%3E">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
         .file-upload-area {
             border: 2px dashed #cbd5e0;
             transition: all 0.3s;
@@ -19,15 +23,17 @@
             background-color: #bee3f8;
         }
     </style>
-</head>
-<body class="bg-gray-50">
-    <div id="root"></div>
+    </head>
+    <body class="bg-gray-50">
+        <div id="root"></div>
 
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script crossorigin
+            src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+        <script crossorigin
+            src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-    <script type="text/babel">
+        <script type="text/babel">
         const { useState } = React;
 
         function App() {
@@ -38,7 +44,9 @@
             const [dragOver, setDragOver] = useState(false);
 
             // Update this with your backend URL
-            const API_URL = 'http://localhost:8000';
+           // const API_URL = 'http://localhost:8000';
+           const API_URL = 'https://receipt-processor-production-7bda.up.railway.app/';
+          
 
             const handleFileChange = (e) => {
                 const selectedFile = e.target.files[0];
@@ -343,5 +351,5 @@
 
         ReactDOM.render(<App />, document.getElementById('root'));
     </script>
-</body>
+    </body>
 </html>
